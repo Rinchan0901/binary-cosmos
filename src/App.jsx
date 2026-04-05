@@ -10,7 +10,7 @@ export default function App() {
     const refresh = () => setRefreshKey(k => k + 1);
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <div className="app-layout">
                 <Sidebar />
                 <main className="main-content">
